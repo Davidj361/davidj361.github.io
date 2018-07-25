@@ -5,7 +5,7 @@ date: 2018-07-25 13:31 -0400
 categories: development
 ---
 
-Now this was quite a difficulty. Especially when you're working in a Windows system as it's "unofficially supported". I ended up going through 10-20 links searching for a tutorial on publishing a blog to Github and creating it on a Windows environment. Most of them just explained how to generate files with Jekyll, etc, but I had no idea how Github served the website. Was it through the generated files in `_site`? It was very confusing considering as I had my repo folder, then the folder created from `jekyll new`, and I had no idea what `jekyll build` and `jekyll serve` generated. Most of the tutorials assumed you knew what to do with all the files generated.
+Now this was quite a difficulty. Especially when you're working in a Windows system as it's "unofficially supported". I ended up going through 10-20 links searching for a tutorial on publishing a blog to Github and creating it on a Windows environment. Most of them just explained how to generate files with Jekyll, etc, but I had no idea how Github served the website. Was it through the generated files in `_site`? It was very confusing considering as I had my repo folder as well as the folder created from `jekyll new`, also I had no idea what `jekyll build` and `jekyll serve` generated. Most of the tutorials assumed you knew what to do with all the files generated.
 
 I first made the repo under _githubUserName_.github.io as was said on Github Pages' help guide. It was very confusing if this was wise or I should've made a repo named blog and used a `gh-pages` branch along with other possible ways as I viewed from youtube and other tutorials.
 
