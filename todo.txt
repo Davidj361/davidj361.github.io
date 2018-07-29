@@ -1,0 +1,6 @@
+<vdamewood> TikityTik: The default for LANGUAGES is C CXX, so if you specify CXX it has the effect of *disabling* C.
+<TikityTik> ah
+<vdamewood> TikityTik: The qt5_copy_dll macro is redundant with fixup_bundle which is provided with Qt.
+<vdamewood> https://cmake.org/cmake/help/v3.12/module/BundleUtilities.html
+<vdamewood> TikityTik: Also, cross compilation isn't about compiling for both systems, it's specifically building for the other system.
+<vdamewood> TikityTik: Oops. I need to correct something. fixup_bundle is provided with *cmake*, not Qt.
