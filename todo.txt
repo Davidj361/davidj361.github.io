@@ -1,3 +1,5 @@
+2018-07-28-cmake-qt-and-visual-studio
+
 <vdamewood> TikityTik: The default for LANGUAGES is C CXX, so if you specify CXX it has the effect of *disabling* C.
 <TikityTik> ah
 <vdamewood> TikityTik: The qt5_copy_dll macro is redundant with fixup_bundle which is provided with Qt.

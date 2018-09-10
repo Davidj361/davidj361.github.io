@@ -98,3 +98,15 @@ For the UI creation, here are the screenshots of the creation of the UI files. T
 <br>
 
 Now you should be able to generate everything with CMake. You can use the command line or GUI for CMake, I used the GUI. You set the source to where the `CMakeLists.txt` is, the rest of the ui and code should be there as well. You can set a build folder somewhere else where it won't interfere with the source. You click the Config button where you should get red boxes indicating new information has appeared. A critical step is to tell CMake where Qt5's CMake files are for the compiler that you are generating for. I installed Qt in C:\ and I was using Visual Studio 2017 so my path was `C:\Qt\5.11.1\msvc2017_64\lib\cmake\Qt5`. I had a problem earlier because I used `C:\Qt\5.11.1\winrt_x64_msvc2017\lib\cmake\Qt5`, notice the winrt. Now you can Generate where you pick the respective compiler you are using, I used Visual Studio 2017 x64. With that, you have generated the necessary files for Visual Studio and can finally open up the project. Make sure once it is open that you right click the project in Visual Studio and select 'Set as StartUp Project', this tells Visual Studio what project to build and debug first. I am skipping what I put in my `main.cpp` but you can view the whole end result [here](https://github.com/Davidj361/HelloQt).
+
+****
+<br>
+
+**EDIT**: I was given some criticism but haven't read up on it yet. Here it is:
+```irc
+<vdamewood> The default for LANGUAGES is C CXX, so if you specify CXX it has the effect of *disabling* C.
+<vdamewood> The qt5_copy_dll macro is redundant with fixup_bundle which is provided with Qt.
+<vdamewood> https://cmake.org/cmake/help/v3.12/module/BundleUtilities.html
+<vdamewood> Also, cross compilation isn't about compiling for both systems, it's specifically building for the other system.
+<vdamewood> Oops. I need to correct something. fixup_bundle is provided with *cmake*, not Qt.
+```
