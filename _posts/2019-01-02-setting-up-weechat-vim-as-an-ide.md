@@ -16,7 +16,7 @@ However, this made the whole learning process much harder since I couldn't follo
 
 Apparently Weechat doesn't support exporting and importing themes, also that it's a very bad idea to edit the config to change things around and you should be using `/set` and `/fset` inside the client. Pretty disappointing.
 Luckily I only had to change some colors to make it less painful for my eyes to read certain things and notice other certain things better.
-The statusbar for Weechat was very cryptic and I found out what it meant from `\fset` on its status.bar.items I believe it was called. I was given this link of an image that explained what each color setting are for.
+The statusbar for Weechat was very cryptic and I found out what it meant from `/fset` on its status.bar.items I believe it was called. I was given this link of an image that explained what each color setting are for.
 ![](http://anti.teamidiot.de/static/nei/*/Code/WeeChat/weechat-color-settings.png)
 
 Another plugins I got was `autojoin` so I could save what channels I was viewing at the moment and have them set to be autojoined just by 1 command.
